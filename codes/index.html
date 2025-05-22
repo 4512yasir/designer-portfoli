@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modester Simiyu - Designer & Developer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <img src="../images//profile.jpeg" alt="Modester Simiyu" />
+            <h1>Modester Simiyu</h1>
+            <p>I am a <span id="typed"></span></p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Modester Simiyu, a passionate designer with coding skills in HTML, CSS, and JavaScript. I
+                love creating elegant and user-friendly digital experiences. I combine creativity with technical skills
+                to bring ideas to life.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div id="projectFilters" class="filters">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="design">Design</button>
+                <button data-filter="code">Code</button>
+            </div>
+
+            <div class="projects-container">
+                <div class="project-item" data-category="design">
+                    <img src="../images/d1.jpeg" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/s.png" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/d2.jpeg" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/d3.jpeg" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/d4.jpeg" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/d5.jpeg" alt="Project 1" />
+                </div>
+                <div class="project-item" data-category="code">
+                    <img src="../images/d6.jpeg" alt="Project 2" />
+                </div>
+                <div class="project-item" data-category="code">
+                    <img src="../images/d7.jpeg" alt="Project 2" />
+                </div>
+                <div class="project-item" data-category="design">
+                    <img src="../images/d0.jpeg" alt="Project 3" />
+                </div>
+            </div>
+
+            <div class="project-video">
+                <h3>Project Demo Video</h3>
+                <video controls>
+                    <source src="../images/v1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="2" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="10"></textarea>
+
+                <button type="submit">Send</button>
+                <p id="formMessage" role="alert"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Modester Simiyu
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
