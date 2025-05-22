@@ -22,7 +22,11 @@ darkModeToggle.addEventListener("click", () => {
 
 // Animated typing intro
 const typedText = document.getElementById("typed");
-const words = ["Designer", "Developer", "Creative Coder", "Problem Solver"];
+const words = [
+  "I am a Visual storyteller.",
+  "I am a Graphic Designer.",
+  "I am Creative thinker.",
+];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
